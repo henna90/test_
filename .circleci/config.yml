@@ -30,7 +30,7 @@ jobs:
     executor: << parameters.os >>
     steps:
       - checkout
-      - run : echo "hello world!" 
+      - run : echo "this is a fork"
       - run : echo "$CIRCLE_BRANCH"
       - run : echo $CIRCLE_BUILD_NUM  
       - run : echo 'export MY_ENV_VAR="FOO"' >> $BASH_ENV
@@ -47,3 +47,5 @@ workflows:
     jobs:
       - test              
 
+
+#TEST
